@@ -1,36 +1,68 @@
 <!DOCTYPE html>
-<!-- saved from url=(0065)file:///C:/Users/tonya/Downloads/love_note_from_the_universe.html -->
+<!-- saved from url=(0072)file:///C:/Users/tonya/Downloads/love_note_universe_mobile_friendly.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Note from the Universe</title>
-    <style>
-        body {
-            background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            font-family: 'Georgia', serif;
-            padding: 20px;
-            text-align: center;
-        }
-        .note {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-            max-width: 600px;
-            font-size: 1.5rem;
-        }
-    </style>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Note from the Universe</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ffe6f0, #ffe6ff);
+      font-family: 'Georgia', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .container {
+      padding: 2em;
+      background: #fff;
+      border-radius: 1em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 90%;
+      box-sizing: border-box;
+    }
+    .note {
+      font-size: 1.5em;
+      color: #8a2be2;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <div class="note">
-        Your frequency is upgrading. Stay soft through the static.
-    </div>
+  <div class="container">
+    <div class="note" id="note">It’s okay to glow up quietly.</div>
+  </div>
+
+  <script>
+    const messages = [
+      "You are made of stardust and sass.",
+      "The universe is conspiring in your favor.",
+      "You’ve survived 100% of your worst days. Keep going.",
+      "Breathe in. Breathe out. You're doing just fine.",
+      "Someone is grateful for your energy today.",
+      "You didn’t come this far to only come this far.",
+      "That feeling you’re chasing is already inside you.",
+      "Rest is productive too, darling.",
+      "Miracles love your address. Don’t move.",
+      "You sparkle harder than a solar flare.",
+      "The path is yours. Walk it with magic.",
+      "Even the moon goes through phases. Be patient.",
+      "The Universe just winked at you.",
+      "Trust the weird little nudges. They’re divine.",
+      "The cosmos isn’t done showing off for you yet.",
+      "You're the plot twist in your own story.",
+      "Don't chase. Attract.",
+      "You’re the blessing someone prayed for.",
+      "It’s okay to glow up quietly.",
+      "If the door doesn’t open, kick it down (with love)."
+    ];
+
+    const randomNote = messages[Math.floor(Math.random() * messages.length)];
+    document.getElementById("note").innerText = randomNote;
+  </script>
 
 
 </body></html>
