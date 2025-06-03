@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Love Note</title>
+  <style>
+    body {
+      background-color: #2e003e;
+      color: #fff;
+      font-family: Georgia, serif;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .note {
+      font-size: 1.4em;
+      max-width: 90%;
+    }
+  </style>
+</head>
+<body>
+  <div class="note" id="note">Receiving your message...</div>
+  <script>
+    const messages = [
+      "You are made of stardust and sass.",
+      "The universe is conspiring in your favor.",
+      "You’ve survived 100% of your worst days. Keep going.",
+      "Someone is grateful for your energy today.",
+      "You didn’t come this far to only come this far.",
+      "That feeling you’re chasing is already inside you.",
+      "Rest is productive too, darling.",
+      "Miracles love your address. Don’t move.",
+      "You sparkle harder than a solar flare.",
+      "You're the plot twist in your own story.",
+      "Don't chase. Attract.",
+      "You’re the blessing someone prayed for.",
+      "You were never asking for too much — just the wrong people.",
+      "If the door doesn’t open, kick it down (with love)."
+    ];
+    document.getElementById("note").textContent = messages[Math.floor(Math.random() * messages.length)];
+  </script>
+</body>
+</html>
